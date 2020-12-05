@@ -16,6 +16,12 @@
 		F8F7C718257B9C8F008FF35D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7C716257B9C8F008FF35D /* LaunchScreen.storyboard */; };
 		F8F7C723257B9C8F008FF35D /* SearchTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7C722257B9C8F008FF35D /* SearchTextFieldTests.swift */; };
 		F8F7C72E257B9C8F008FF35D /* SearchTextFieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7C72D257B9C8F008FF35D /* SearchTextFieldUITests.swift */; };
+		F8F7C741257B9D9E008FF35D /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7C740257B9D9E008FF35D /* SearchTextField.swift */; };
+		F8F7C749257B9E23008FF35D /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7C748257B9E23008FF35D /* ListItem.swift */; };
+		F8F7C74E257B9F5A008FF35D /* CornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7C74D257B9F5A008FF35D /* CornerView.swift */; };
+		F8F7C753257BA1F1008FF35D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7C752257BA1F1008FF35D /* UIView+Extension.swift */; };
+		F8F7C75A257BA30F008FF35D /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7C758257BA30F008FF35D /* SearchTableViewCell.swift */; };
+		F8F7C75B257BA30F008FF35D /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F7C759257BA30F008FF35D /* SearchTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		F8F7C729257B9C8F008FF35D /* SearchTextFieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchTextFieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F7C72D257B9C8F008FF35D /* SearchTextFieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextFieldUITests.swift; sourceTree = "<group>"; };
 		F8F7C72F257B9C8F008FF35D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8F7C740257B9D9E008FF35D /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		F8F7C748257B9E23008FF35D /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		F8F7C74D257B9F5A008FF35D /* CornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerView.swift; sourceTree = "<group>"; };
+		F8F7C752257BA1F1008FF35D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F8F7C758257BA30F008FF35D /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		F8F7C759257BA30F008FF35D /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,7 @@
 		F8F7C707257B9C8F008FF35D /* SearchTextField */ = {
 			isa = PBXGroup;
 			children = (
+				F8F7C73E257B9D67008FF35D /* Custom Controls */,
 				F8F7C708257B9C8F008FF35D /* AppDelegate.swift */,
 				F8F7C70A257B9C8F008FF35D /* SceneDelegate.swift */,
 				F8F7C70C257B9C8F008FF35D /* ViewController.swift */,
@@ -129,6 +142,35 @@
 				F8F7C72F257B9C8F008FF35D /* Info.plist */,
 			);
 			path = SearchTextFieldUITests;
+			sourceTree = "<group>";
+		};
+		F8F7C73E257B9D67008FF35D /* Custom Controls */ = {
+			isa = PBXGroup;
+			children = (
+				F8F7C73F257B9D7A008FF35D /* SearchTextField */,
+			);
+			path = "Custom Controls";
+			sourceTree = "<group>";
+		};
+		F8F7C73F257B9D7A008FF35D /* SearchTextField */ = {
+			isa = PBXGroup;
+			children = (
+				F8F7C757257BA2C0008FF35D /* TableViewCell */,
+				F8F7C740257B9D9E008FF35D /* SearchTextField.swift */,
+				F8F7C748257B9E23008FF35D /* ListItem.swift */,
+				F8F7C74D257B9F5A008FF35D /* CornerView.swift */,
+				F8F7C752257BA1F1008FF35D /* UIView+Extension.swift */,
+			);
+			path = SearchTextField;
+			sourceTree = "<group>";
+		};
+		F8F7C757257BA2C0008FF35D /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F8F7C758257BA30F008FF35D /* SearchTableViewCell.swift */,
+				F8F7C759257BA30F008FF35D /* SearchTableViewCell.xib */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8F7C718257B9C8F008FF35D /* LaunchScreen.storyboard in Resources */,
+				F8F7C75B257BA30F008FF35D /* SearchTableViewCell.xib in Resources */,
 				F8F7C715257B9C8F008FF35D /* Assets.xcassets in Resources */,
 				F8F7C710257B9C8F008FF35D /* Main.storyboard in Resources */,
 			);
@@ -261,6 +304,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8F7C75A257BA30F008FF35D /* SearchTableViewCell.swift in Sources */,
+				F8F7C749257B9E23008FF35D /* ListItem.swift in Sources */,
+				F8F7C741257B9D9E008FF35D /* SearchTextField.swift in Sources */,
+				F8F7C753257BA1F1008FF35D /* UIView+Extension.swift in Sources */,
+				F8F7C74E257B9F5A008FF35D /* CornerView.swift in Sources */,
 				F8F7C70D257B9C8F008FF35D /* ViewController.swift in Sources */,
 				F8F7C709257B9C8F008FF35D /* AppDelegate.swift in Sources */,
 				F8F7C70B257B9C8F008FF35D /* SceneDelegate.swift in Sources */,
@@ -370,7 +418,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -425,7 +473,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
