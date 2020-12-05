@@ -1,8 +1,7 @@
 # SearchTextField
 Custom Searchable TextField class written in Swift
 
-
-<img src="https://github.com/Rishu0021/SearchTextField/blob/main/Screenshots/Screenshot.png" width="324"> <img src="https://github.com/Rishu0021/SearchTextField/blob/main/Screenshots/Screenshot1.png" width="324">
+<img src="https://github.com/Rishu0021/SearchTextField/blob/main/Screenshots/Screenshot1.png" width="324"> <img src="https://github.com/Rishu0021/SearchTextField/blob/main/Screenshots/Screenshot.png" width="324"> 
 
 # Prerequisites
 - Swift 5
